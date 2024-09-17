@@ -14,7 +14,7 @@ export function ChatList({ className }: Props) {
   return (
     <div className={cn("flex flex-col", className)}>
       <div>
-        hello hello hello hello hello hello
+        {/* hello hello hello hello hello hello */}
         <div className="my-6" />
       </div>
     </div>

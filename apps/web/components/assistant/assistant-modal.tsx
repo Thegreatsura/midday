@@ -12,14 +12,5 @@ export function AssistantModal() {
     enableOnFormTags: true,
   });
 
-  return (
-    <Dialog open={true} onOpenChange={setOpen}>
-      <DialogContent
-        className="overflow-hidden p-0 max-w-full w-full h-full md:max-w-[740px] md:h-[480px] m-0"
-        // hideClose
-      >
-        <Assistant />
-      </DialogContent>
-    </Dialog>
-  );
+  return <Assistant />;
 }

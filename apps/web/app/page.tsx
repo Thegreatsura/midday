@@ -1,4 +1,3 @@
-"use client";
 import { Assistant } from "@/components/assistant";
 import Image from "next/image";
 

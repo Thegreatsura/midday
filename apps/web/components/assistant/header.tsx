@@ -2,6 +2,8 @@ import { useAssistantStore } from "./store";
 import { Button } from "@/components/ui/button";
 // import { Icons } from "@midday/ui/icons";
 import { Experimental } from "./experimental";
+import { ModeToggle } from "../toggle";
+import { Menu } from "lucide-react";
 
 type Props = {
   isExpanded: boolean;
@@ -25,7 +27,7 @@ export function Header({ toggleSidebar, isExpanded }: Props) {
           ) : (
             <Icons.Sidebar width={18} />
           )} */}
-          hello
+          <Menu />
         </Button>
 
         <h2>Assistant</h2>
@@ -37,8 +39,7 @@ export function Header({ toggleSidebar, isExpanded }: Props) {
         variant="ghost"
         onClick={() => setOpen()}
       >
-        {/* <Icons.Close /> */}
-        close
+        <ModeToggle />
       </Button>
 
       <div className="space-x-2 items-center hidden md:flex todesktop:flex">
